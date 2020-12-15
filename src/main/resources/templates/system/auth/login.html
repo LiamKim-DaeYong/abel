@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>로그인</title>
+
+    <link rel="stylesheet" href="/css/system/login.css">
+    <th:block th:replace="layout/head :: head"></th:block>
+
+    <script type="text/javascript" th:src="@{/js/common.js}"></script>
+    <script type="text/javascript" th:src="@{/js/system/auth/login.js}"></script>
+</head>
+
+<body>
+    <div class="login_box">
+        <h2>로그인</h2>
+        <form id="form" th:action="@{/login}" method="post">
+            <input type="text" id="username" name="username" placeholder="아이디" autofocus="autofocus" required="required"
+                   autocomplete="off" />
+            <input type="password" id="password" name="password" placeholder="비밀번호" required="required"
+                   autocomplete="off" />
+
+            <button type="button" class="login_btn" onclick="login()">로그인</button>
+        </form>
+        <span th:if="${error}" th:text="${errorMessage}"></span>
+    </div>
+</body>
+</html>

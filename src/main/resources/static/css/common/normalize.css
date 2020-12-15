@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&subset=korean');
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    box-sizing : border-box;
+    word-break: keep-all;
+    letter-spacing: -1px;
+    font-family: "Noto sans kr", sans-serif !important;
+}
+
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {
+    display: block;
+    border: 0;
+    *margin: 0;
+    *padding: 0;
+    *font-size: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: center;
+}
+
+fieldset, img, iframe {
+    border: 0
+}
+
+input {
+    box-sizing : border-box;
+}
+
+input:focus {
+    outline:none;
+}
+
+::placeholder {
+    font-family: "Noto sans kr", sans-serif !important;
+    color:#ccc;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+caption, legend {
+    display: none
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    -webkit-text-size-adjust: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 14px;
+    color: #212121;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}

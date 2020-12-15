@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>abel Project</title>
+    <script type="text/javascript">
+         $(document).ready(function() {
+            ajax("/headerMenu", {}, function(headMenu) {
+                $("#headMenu").replaceWith(headMenu);
+            });
+        });
+    </script>
+</head>
+    <header id="headMenu" th:fragment="headMenu" style="background: red">
+        <ul>
+            <li style="display: inline-block; padding: 5px 10px;">시스템</li>
+        </ul>
+    </header>
+</html>

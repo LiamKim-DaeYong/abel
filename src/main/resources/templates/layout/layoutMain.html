@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title layout:title-pattern="$LAYOUT_TITLE : $CONTENT_TITLE"></title>
+    <th:block th:replace="layout/head"></th:block>
+    <script>
+        function test() {
+            location.href = "/";
+        }
+
+        function test2() {
+            location.href = "/main2";
+        }
+    </script>
+</head>
+<body>
+    <!-- page content javascript -->
+    <th:block layout:fragment="pageCustomScript"></th:block>
+
+    <!-- page content css -->
+    <th:block layout:fragment="pageCustomCss"></th:block>
+
+    <header th:replace="layout/layoutHead :: headMenu"></header>
+
+    <div style="width: 10%; background: yellow; height: 100%; float: left">
+        <th:block th:replace="layout/layoutLeft :: leftMenu"></th:block>
+    </div>
+
+    <div style="vertical-align: top; height: 100%; width: 90%; float:right">
+        <!-- page content body 구성 -->
+        <div style="height:90%;">
+            <th:block layout:fragment="content"></th:block>
+        </div>
+
+        <!-- 공통 footer -->
+        <div style="height: 10%;">
+            <footer th:replace="layout/layoutFooter :: footer"></footer>
+        </div>
+    </div>
+</body>
+</html>

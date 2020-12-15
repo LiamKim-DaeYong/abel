@@ -1,0 +1,42 @@
+.abel-title {
+    display:table;
+    height:60px;
+    padding:1em;
+}
+
+.abel-title .title {
+    display: table-cell;
+    font-size: 20px;
+    vertical-align: middle
+}
+
+.title-button {
+
+}
+
+.searchView {
+    width: 100%;
+    padding: 1em;
+    display: inline-block;
+    border: #515151;
+}
+
+.searchView table {
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;;
+}
+
+.searchView table th {
+    width: 100px;
+    background: #eeeeee;
+    border-right: 1px solid #cccccc;
+    padding: 10px;
+    font-weight: normal;
+}
+
+.searchView table td {
+    background: #fff;
+    padding: 10px;
+    text-align: left;
+}
